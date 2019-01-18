@@ -1,0 +1,18 @@
+
+
+
+<app-header #childHeader [msg]="msg" (outer)="run($event)"></app-header>
+<hr>
+<input type="text" [(ngModel)]="title">
+<button (click)="add()">添加</button>
+<ul>
+  <li *ngFor="let item of listArr;let key = index;" (click)="remove(key)" >
+    {{item}}------{{key}}
+  </li>
+</ul>
+<div #mydiv>我是一个dom结构</div>
+<button (click)="parentChange()">调用子组件方法</button>
+
+<hr>
+<!-- <app-life></app-life> -->
+<hr>
