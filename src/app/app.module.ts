@@ -10,6 +10,8 @@ import {FormsModule} from '@angular/forms';
 import { StorageService } from './services/storage.service';
 import { HeaderComponent } from './components/header/header.component';
 import { LifeComponent } from './components/life/life.component';
+import { NewsComponent } from './components/news/news.component';
+import { NewsDetailComponent } from './components/news-detail/news-detail.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { LifeComponent } from './components/life/life.component';
     AppComponent,
     HomeComponent,
     HeaderComponent,
-    LifeComponent
+    LifeComponent,
+    NewsComponent,
+    NewsDetailComponent
   ],
   imports: [
     BrowserModule,

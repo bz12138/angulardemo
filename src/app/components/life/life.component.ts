@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-life',
@@ -7,11 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LifeComponent implements OnInit {
 
+  @Input() msg:string;
+
   constructor() { 
     console.log('00执行了构造函数---1次');
   }
 
-  ngOnChanges() {
+  ngOnchanges() {
     console.log('01ngOnChanges');
   }
   ngOnInit() {

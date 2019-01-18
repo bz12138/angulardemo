@@ -14,5 +14,11 @@
 <button (click)="parentChange()">调用子组件方法</button>
 
 <hr>
-<!-- <app-life></app-life> -->
+<app-life [msg]="msg"></app-life>
 <hr>
+<button (click)="getRxjsData();getPromiseData()">通过rxjs请求异步数据</button>
+<button (click)="UnRxjsDate()">在rxjs请求到数据之前取消订阅</button>
+<button (click)="AgainRxjsData()">多次执行rxjs</button>
+<button (click)="getRxjsToolData()">rxjs工具函数</button>
+<hr>
+
