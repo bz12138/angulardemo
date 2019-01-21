@@ -1,3 +1,21 @@
 <p>
   news works!
 </p>
+<a routerLink="/newsDetail/123">123</a>
+<br>
+<a routerLink="/newsItem?aid=222">get传值方式</a>
+<ul>
+  <li *ngFor="let item of list; let key = index;">
+    <a [routerLink]="['/newsDetail', key]">这是第个{{item}}li-----{{key}}</a>
+    &nbsp;&nbsp;&nbsp;
+    <a routerLink="[newsDetail/{{item}}]">这是第个{{item}}li-----{{key}}</a>
+    <br>
+    <!-- <a [routerLink]="[/newsDetail]" [queryParams]="{aid:item}">通过get传值方式跳转{{item}}</a> -->
+    </li>
+</ul>
+<ol >
+    <li *ngFor="let item of list; let key = index;">
+        <a [routerLink]="['/newsItem']" [queryParams]="{aid:item}">通过get传值方式跳转{{item}}</a>
+        <!-- <a [routerLink]="['/newscontent']" [queryParams]="{aid:key}">{{key}}--{{item}}</a> -->
+    </li>
+</ol>

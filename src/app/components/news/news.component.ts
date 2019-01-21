@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewsComponent implements OnInit {
 
+  private list:number[] = [1,2,3,4,5,6,7];
   constructor() { }
 
-  ngOnInit() {
+ngOnInit() {
   }
 
 }

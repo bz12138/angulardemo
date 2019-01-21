@@ -12,6 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LifeComponent } from './components/life/life.component';
 import { NewsComponent } from './components/news/news.component';
 import { NewsDetailComponent } from './components/news-detail/news-detail.component';
+import { NewsItemComponent } from './components/news-item/news-item.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { NewsDetailComponent } from './components/news-detail/news-detail.compon
     HeaderComponent,
     LifeComponent,
     NewsComponent,
-    NewsDetailComponent
+    NewsDetailComponent,
+    NewsItemComponent
   ],
   imports: [
     BrowserModule,

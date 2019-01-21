@@ -3,6 +3,7 @@ import {StorageService} from '../../services/storage.service';
 import { RequestService } from '../../services/request.service';
 
 import {map, filter} from 'rxjs/operators';
+// import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-home',
@@ -92,10 +93,10 @@ export class HomeComponent implements OnInit {
   getRxjsToolData() {
     //使用rxjs工具函数
     this.request.getAgainRxjsData().pipe(
-      filter((value) => {
-        if (value % 2 === 0) {
+      filter((value:string) => {
+        // if (value % 2 === 0) {
           return true;
-        }
+        // }
       }),
       map(value => {
         return value + '--map';
